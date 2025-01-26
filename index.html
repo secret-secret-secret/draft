@@ -10,23 +10,25 @@
    </button>
 </header>
 
-<body onload="message()">
-   <embed id="viewer" type="text/html" src="https://drive.proton.me/urls/0SR5MJ3SFG#dUFYhO1ej1L8" height="500em" width="100%">
+<body onload="welcome()">
+   <embed id="viewer" type="" src="https://drive.proton.me/urls/0SR5MJ3SFG#dUFYhO1ej1L8" height="500em" width="100%">
    </embed>
    <p>
       this website is in progress. many features still do not work.
    </p>
-   <a href="" download><button> Save a Personal Copy </button></a> 
    <!-- download link -->
-   <!-- create a fake link for the file download page -->
-   <!-- redirect to the fake download link -->
-   <!-- redirect the user to google -->
+   <a id="downloader" href="" download>
+      <button> Save a Personal Copy </button>
+   </a> 
+   <!-- TODO: create a fake link for the file download page -->
+   <!-- TODO: redirect to the fake download link -->
+   <!-- TODO: redirect the user to google -->
 
-   <!-- top ribbon: allyship, history, survival -->
+   <!-- TODO: open columns based on selection -->
    <nav>
-      <button onclick="showAllyship()"> Allyship </button>
-      <button onclick="showHistory()"> History </button>
-      <button onclick="showSurvival()"> Survival </button>
+      <button onclick="showTable(allyship)"> Allyship </button>
+      <button onclick="showTable(history)"> History </button>
+      <button onclick="showTable(survival)"> Survival </button>
          <a href="files/For Those With Little Time.pdf" download>
             <button>
             I Don't Have a Lot of Time
@@ -34,7 +36,7 @@
          </a>
    </nav>
 
-   <!-- use tables for these -->
+   <!-- TODO: make tables for these -->
    <div hidden id="allyship">
       allyship
    </div>
@@ -43,7 +45,6 @@
    <div id="history">
       <table>
          <tr>
-
             <button onclick="showFolder('1600s')">
                1600s
             </button>
@@ -69,17 +70,13 @@
                1789-Present - Acts of the Congress
             </button>
          </tr>
-         <tr>
-            <a src="files/1789-Present - Acts of the Congress/1807-1809 - 10th Congress.pdf" download>
-               <button class="congress">
-                  1807-1809 - 10th Congress
-               </button>
-            </a>
-            <a src="files/1789-Present - Acts of the Congress/1840-1841 - 26th Congress.pdf" download>
-            <button>
+         <tr class="congress" >
+            <button onclick="selectFile('files/1789-Present - Acts of the Congress/1807-1809 - 10th Congress.pdf')">
+               1807-1809 - 10th Congress
+            </button>
+            <button onclick="selectFile('files/1789-Present - Acts of the Congress/1840-1841 - 26th Congress.pdf')">
                   1840-1841 - 26th Congress
             </button>
-            </a>
             file
             folder
             collapse these when they are not toggled
