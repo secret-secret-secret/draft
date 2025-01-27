@@ -37,7 +37,7 @@ function sendToDownloader(source){
 // https://drive.google.com/uc?export=download&id=1LDRlyZaZTF-bxHjBDEiL2obMxYHtf3YT
 
 
-function nav(file) {
+function showTable(file) {
    document.getElementById(file).hidden = false;
    document.getElementsByClassName(div).getElementById(!file).hidden = false;
 }
