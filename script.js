@@ -3,7 +3,7 @@ function welcome() {
 }
 
 // file viewer and downloader functions
-function selectFile(source) {
+function select(source) {
    document.getElementById("viewer").setAttribute("src", source);
    document.getElementById("downloader").setAttribute("href", source)
 }
