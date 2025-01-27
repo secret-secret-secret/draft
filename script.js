@@ -8,17 +8,23 @@ function select(source) {
    document.getElementById("downloader").setAttribute("href", source)
 }
 
+// showing file tables and file columns
+function columnVis(column) {
+   if (document.getElementById(column).style.visibility === "collapse") {
+      document.getElementById(column).style.visibility = "visible";
+   } else {
+      document.getElementById(column).style.visibility = "collapse";
+   }
+}
+
+function tableVis(table) {
+   if (document.getElementById(table).hidden === "true") {
+      document.getElementById(table).hidden = "false";
+   } else {
+      document.getElementById(table).hidden = "true";
+   }
+}
+
 // https://drive.google.com/file/d/1LDRlyZaZTF-bxHjBDEiL2obMxYHtf3YT/view?usp=sharing
 // And it extracts the file ID, the part between /d/ and /view, and puts it into a new URL which looks like this:
 // https://drive.google.com/uc?export=download&id=1LDRlyZaZTF-bxHjBDEiL2obMxYHtf3YT
-
-
-function showTable(table) {
-   document.getElementById(table).hidden = false;
-   document.getElementsByClassName("div").getElementById(!table).hidden = false;
-}
-
-function showFolder(folder) {
-   document.getElementById(folder).hidden = false;
-   document.getElementsByClassName("div").getElementById(!folder).hidden = false;
-}

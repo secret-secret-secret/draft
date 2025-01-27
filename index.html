@@ -2,7 +2,7 @@
 <html>
 <head>
    <!-- link to stylesheet -->
-   <link rel="stylesheet" type="test/css" href="style.css">
+   <link rel="stylesheet" href="style.css">
 
    <!-- link to JS -->
    <script src="script.js"></script>
@@ -44,8 +44,18 @@
    </div>
 
    <!-- three columns: year, event, files -->
-   <div id="history">
+   <div hidden id="history">
       <table>
+         <colgroup>
+            <col hidden span="1" id="1600s">
+            <col hidden span="1" id="1700s">
+            <col hidden span="1" id="1800s">
+            <col hidden span="1" id="1900s">
+            <col hidden span="1" id="2000s">
+            <col hidden span="1" id="2010s">
+            <col hidden span="1" id="2020s">
+            <col hidden span="1" id="congress">
+         </colgroup>
          <tr hidden>
             <button onclick="showFolder('1600s')">
                1600s
@@ -72,21 +82,20 @@
                1789-Present - Acts of the Congress
             </button>
          </tr>
-         <tr class="congress">
+         <tr></tr>
+         <tr></tr>
+         <tr></tr>
+         <tr></tr>
+         <tr></tr>
+         <tr></tr>
+         <tr></tr>
+         <tr>
             <button onclick="select('files/1789-Present - Acts of the Congress/1807-1809 - 10th Congress.pdf')">
                1807-1809 - 10th Congress
             </button>
             <button onclick="select('files/1789-Present - Acts of the Congress/1840-1841 - 26th Congress.pdf')">
                1840-1841 - 26th Congress
             </button>
-            file
-            folder
-            collapse these when they are not toggled
-         </tr>
-         <tr>
-            file
-            folder
-            collapse these when they are not toggled
          </tr>
       </table>
    </div>
