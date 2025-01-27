@@ -4,32 +4,8 @@ function welcome() {
 
 // file viewer and downloader functions
 function selectFile(source) {
-   // TODO: go to the last character in the file, traverse backwards,
-   // find the file extension, copy it to the variable "extension"
-   for (let periodFinder = source.length; periodFinder > source.length; periodFinder--) {
-      if (source[index] = ".") {
-       for (let extensionFinder = 0; extensionFinder < periodFinder; extensionFinder++) {
-         extension = extension + array[index];
-       }  
-      break;
-      }
-   }
-   extension;
-   sendToViewer(source)
-   sendToDownloader(source)
-}
-
-function sendToViewer(extension, source) {
-   viewer = document.getElementById(viewer);
-   // clear class, src, and dimesnion value
-   viewer.innerHTML = null;
-   viewer.innerHTML = 'type="' + extension + ' href="' + source + '" height="500em" width="100%"';
-}
-
-function sendToDownloader(source){
-   downloader = document.getElementById("downloader");
-   downloader.innerHTML = null;
-   downloader.innerHTML = 'id="downloader" href="' + source + '" download';
+   document.getElementById("viewer").setAttribute("src", source);
+   document.getElementById("downloader").setAttribute("href", source)
 }
 
 // https://drive.google.com/file/d/1LDRlyZaZTF-bxHjBDEiL2obMxYHtf3YT/view?usp=sharing
@@ -37,7 +13,12 @@ function sendToDownloader(source){
 // https://drive.google.com/uc?export=download&id=1LDRlyZaZTF-bxHjBDEiL2obMxYHtf3YT
 
 
-function showTable(file) {
-   document.getElementById(file).hidden = false;
-   document.getElementsByClassName(div).getElementById(!file).hidden = false;
+function showTable(table) {
+   document.getElementById(table).hidden = false;
+   document.getElementsByClassName("div").getElementById(!table).hidden = false;
+}
+
+function showFolder(folder) {
+   document.getElementById(folder).hidden = false;
+   document.getElementsByClassName("div").getElementById(!folder).hidden = false;
 }
