@@ -16,7 +16,7 @@ function selectFile(source) {
    }
    extension;
    sendToViewer(source)
-   sendToDownloader(sourcee)
+   sendToDownloader(source)
 }
 
 function sendToViewer(extension, source) {
