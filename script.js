@@ -9,19 +9,19 @@ function select(source) {
 }
 
 // showing file tables and file columns
-function columnVis(column) {
-   if (document.getElementById(column).style.visibility === "collapse") {
-      document.getElementById(column).style.visibility = "visible";
-   } else {
-      document.getElementById(column).style.visibility = "collapse";
-   }
-}
-
 function tableVis(table) {
    if (document.getElementById(table).hidden === "true") {
       document.getElementById(table).hidden = "false";
    } else {
       document.getElementById(table).hidden = "true";
+   }
+}
+
+function columnVis(column) {
+   if (document.getElementById(column).style.visibility === "collapse") {
+      document.getElementById(column).style.visibility = "visible";
+   } else {
+      document.getElementById(column).style.visibility = "collapse";
    }
 }
 
