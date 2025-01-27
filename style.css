@@ -1,6 +1,11 @@
-table {
-    border: black solid 10px;
+button {
+    display:block;
 }
-td {
+      
+table {
+    border: black solid 1px;
+}
+
+tr {
     width: 33%;
 }

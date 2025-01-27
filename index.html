@@ -10,6 +10,11 @@
 <header>
    <h1> Project DUST </h1>
    <p> Domestic Survival • Unity • Sources • Transition </p>
+   <a href="files/For Those With Little Time.pdf" download>
+      <button>
+      I Don't Have a Lot of Time
+      </button>
+   </a>
    <button>
       Change Site Language
    </button>
@@ -26,88 +31,88 @@
       <button> Save a Personal Copy </button>
    </a> 
 
-   <!-- TODO: open columns based on selection -->
    <nav>
-      <button onclick="showTable('allyship')"> Allyship </button>
-      <button onclick="showTable('history')"> History </button>
-      <button onclick="showTable('survival')"> Survival </button>
-         <a href="files/For Those With Little Time.pdf" download>
-            <button>
-            I Don't Have a Lot of Time
-            </button>
-         </a>
+      <button onclick="vis('allyship')"> Allyship </button>
+      <button onclick="vis('history')"> History </button>
+      <button onclick="vis('survival')"> Survival </button>
    </nav>
 
    <!-- TODO: make tables for these -->
-   <div hidden id="allyship">
+   <table hidden id="allyship">
       allyship
-   </div>
+   </table>
 
    <!-- three columns: year, event, files -->
-   <div hidden id="history">
-      <table>
-         <colgroup>
-            <col hidden span="1" id="1600s">
-            <col hidden span="1" id="1700s">
-            <col hidden span="1" id="1800s">
-            <col hidden span="1" id="1900s">
-            <col hidden span="1" id="2000s">
-            <col hidden span="1" id="2010s">
-            <col hidden span="1" id="2020s">
-            <col hidden span="1" id="congress">
-         </colgroup>
-         <tr hidden>
-            <button onclick="columnVis('1600s')">
-               1600s
+   <table id="history" display="hidden">
+      <caption> History </caption>
+        <thead>
+          <tr>
+            <th>
+            Century (Gregorian)
+            </th>
+            <th>
+            Sources
+            </th>
+            <th>
+            Additional Sources
+            </th>
+          </tr>
+        </thead>
+        <tr>
+           <td>
+            <button onclick="vis('1600s')">
+              1600s
             </button>
-            <button onclick="columnVis('1700s')">
-               1700s
+            <button onclick="vis('1700s')">
+              1700s
             </button>
-            <button onclick="columnVis('1800s')">
-               1800s
+            <button onclick="vis('1800s')">
+              1800s
             </button>
-            <button onclick="columnVis('1900s')">
-               1900s
+            <button onclick="vis('1900s')">
+              1900s
             </button>
-            <button onclick="columnVis('2000s')">
-               2000s
+            <button onclick="vis('2000s')">
+              2000s
             </button>
-            <button onclick="columnVis('2010s')">
-               2010s
+            <button onclick="vis('2010s')">
+              2010s
             </button>
-            <button onclick="columnVis('2020s')">
-               2020s
+            <button onclick="vis('2020s')">
+              2020s
             </button>
-            <button onclick="columnVis('congress')">
-               1789-Present - Acts of the Congress
-            </button>
-         </tr>
-         <tr></tr>
-         <tr></tr>
-         <tr></tr>
-         <tr></tr>
-         <tr></tr>
-         <tr></tr>
-         <tr></tr>
-         <tr>
-            <button onclick="select('files/1789-Present - Acts of the Congress/1807-1809 - 10th Congress.pdf')">
-               1807-1809 - 10th Congress
-            </button>
+           </td>
+          <td>
+            <div id="1600s"></div>
+            <div id="1700s"></div>
+            <div id="1800s"></div>
+            <div id="1900s"></div>
+            <div id="2000s"></div>
+            <div id="2010s"></div>
+            <div id="2020s">
+              <button></button>
+              <button onclick="vis('congress')">
+                1789-Present - Acts of the Congress
+              </button>
+            </div>
+          </td>
+           <td>        
+              <button onclick="select('files/1789-Present - Acts of the Congress/1807-1809 - 10th Congress.pdf')">
+                 1807-1809 - 10th Congress
+              </button>
             <button onclick="select('files/1789-Present - Acts of the Congress/1840-1841 - 26th Congress.pdf')">
                1840-1841 - 26th Congress
             </button>
-         </tr>
+           </td>
       </table>
-   </div>
 
    <!-- three columns: skill, topic, files -->
-   <div hidden id="survival">
+   <table hidden id="survival">
       survival
-   </div>
+   </table>
 </body>
 
 <footer>
-   <!-- make this a line of small icons -->
    <h1>
       Our Friends
    </h1>
