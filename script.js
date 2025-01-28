@@ -16,6 +16,3 @@ function vis(column) {
       document.getElementById(column).style.height = "25%";
    }
 }
-// https://drive.google.com/file/d/1LDRlyZaZTF-bxHjBDEiL2obMxYHtf3YT/view?usp=sharing
-// And it extracts the file ID, the part between /d/ and /view, and puts it into a new URL which looks like this:
-// https://drive.google.com/uc?export=download&id=1LDRlyZaZTF-bxHjBDEiL2obMxYHtf3YT

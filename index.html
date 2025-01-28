@@ -8,8 +8,8 @@
    <script src="script.js"></script>
 </head>
 <header>
-   <h1> Project DUST </h1>
-   <p> Domestic Survival • Unity • Sources • Transition </p>
+   <h1> HAS Project </h1> <span> (Local) </span>
+   <p> History • Allyship • Survival </p>
    <nav>
    <a href="files/For Those With Little Time.pdf" download>
       <button>
@@ -38,17 +38,13 @@
       <button onclick="vis('survival')"> Survival </button>
    </nav>
 
-   <!-- TODO: figure out how to link table from another file -->
-   <!-- maybe object, template, or iframe -->
-   <!-- it needs to respond to the JS commands -->
-
    <!-- TODO: three columns: topic, files, additional -->
-   <iframe id="allyship" width="100%"></iframe>
+   <iframe id="allyship" src="tables/allyship/allyship.html" width="100%"></iframe>
 
    <iframe id="history" src="tables/history/history.html" width="100%"></iframe>
 
    <!-- TODO: three columns: skill, topic, files -->
-   <iframe id="survival" width="100%" display="hidden" ></iframe>
+   <iframe id="survival" src="tables/survival/survival.html" width="100%" display="hidden" ></iframe>
 </body>
 
 <footer>
