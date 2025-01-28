@@ -10,14 +10,10 @@ function select(source) {
 
 // showing file tables and file columns
 function vis(column) {
-   if (document.getElementById(column).style.height === "0") {
-      document.body.style.backgroundColor = "white";
-      document.getElementById("login").style.borderBottom = "solid";
-      document.getElementById("login").style.height = "25%";
-   } else {
+   if (document.getElementById(column).style.height === "25%") {
       document.getElementById(column).style.height = "0";
-      document.body.style.backgroundColor = "white";
-      document.getElementById("login").style.borderBottom = "none";
+   } else {
+      document.getElementById(column).style.height = "25%";
    }
 }
 // https://drive.google.com/file/d/1LDRlyZaZTF-bxHjBDEiL2obMxYHtf3YT/view?usp=sharing
