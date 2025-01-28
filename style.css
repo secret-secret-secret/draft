@@ -1,7 +1,11 @@
 button {
     display:block;
 }
-      
+
+nav {
+    display: inline;
+}
+
 table {
     border: black solid 1px;
 }
