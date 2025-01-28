@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!-- link to stylesheet -->
+   <link rel="stylesheet" href="../style.css">
+
+   <!-- link to JS -->
+   <script src="../script.js"></script>
+</head>
+
+<table height="250em" width="100%">
+    <caption> History </caption>
+    <!-- header row -->
+      <thead>
+        <tr>
+          <th>
+            Century (Gregorian)
+          </th>
+          <th>
+          Sources
+          </th>
+          <th>
+            Additional Sources
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- content row -->
+        <tr>
+          <!-- topic column -->
+          <td>
+            <button onclick="vis('1600s')">
+            1600s
+            </button>
+            <button onclick="vis('1700s')">
+            1700s
+            </button>
+            <button onclick="vis('1800s')">
+            1800s
+            </button>
+            <button onclick="vis('1900s')">
+            1900s
+            </button>
+            <button onclick="vis('2000s')">
+            2000s
+            </button>
+            <button onclick="vis('2010s')">
+            2010s
+            </button>
+            <button onclick="vis('2020s')">
+            2020s
+            </button>
+          </td>
+          <!-- source row -->
+          <td>
+            <!-- from 1600s -->
+            <div id="1600s"></div>
+
+            <!-- from 1700s -->
+            <div id="1700s"></div>
+
+            <!-- from 1800s -->
+            <div id="1800s"></div>
+
+            <!-- from 1900s -->
+            <div id="1900s"></div>
+
+            <!-- from 2000s -->
+            <div id="2000s"></div>
+
+            <!-- from 2010s -->
+            <div id="2010s"></div>
+
+            <!-- from 2020s -->
+            <div id="2020s" display="hidden">
+              <button onclick="select('../files/history/2020s/2022 - The Lead-Crime Hypothesis.pdf')">
+                The Lead-Crime Hypothesis
+              </button>
+              <!-- Congress folder -->
+              <button onclick="vis('congress')">
+                  1789-Present - Acts of the Congress
+              </button>
+            </div>
+          </td>
+
+          <!-- additional source row -->
+          <td>
+            <!-- congress source div -->
+            <iframe href="congress.html"></iframe>
+          </td>
+        </tr>
+    </tbody>
+</table>
+</html>
