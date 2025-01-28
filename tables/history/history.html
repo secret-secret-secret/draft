@@ -9,7 +9,7 @@
    <script src="../../script.js"></script>
 </head>
 
-<table height="250em" width="100%">
+<table width="100%">
     <caption> History </caption>
     <!-- header row -->
       <thead>
@@ -26,9 +26,9 @@
         </tr>
       </thead>
       <tbody>
-        <!-- content row -->
+        <!-- years row -->
         <tr>
-          <!-- topic column -->
+          <!-- years column -->
           <td>
             <button onclick="vis('1600s')">
             1600s
@@ -55,22 +55,22 @@
           <!-- source row -->
           <td>
             <!-- from 1600s -->
-            <div id="1600s" height="0"></div>
+            <div id="1600s" class="frame"></div>
 
             <!-- from 1700s -->
-            <div id="1700s" height="0"></div>
+            <div id="1700s" class="frame"></div>
 
             <!-- from 1800s -->
-            <div id="1800s" height="0"></div>
+            <div id="1800s" class="frame"></div>
 
             <!-- from 1900s -->
-            <div id="1900s" height="0"></div>
+            <div id="1900s" class="frame"></div>
 
             <!-- from 2000s -->
-            <div id="2000s" height="0"></div>
+            <div id="2000s" class="frame"></div>
 
             <!-- from 2010s -->
-            <div id="2010s" height="0">
+            <div id="2010s" class="frame">
               <button onclick="select('../../files/history/2010s/2012 - The Song of Achilles.pdf')">
                 The Song of Achilles
               </button>
@@ -95,7 +95,7 @@
             </div>
 
             <!-- from 2020s -->
-            <div id="2020s" height="0">
+            <div id="2020s" class="frame">
               <button onclick="select('../../files/history/2020s/2020 - The Ballad of Songbirds and Snakes.pdf')">
                 The Ballad of Songbirds and Snakes
               </button>
@@ -131,11 +131,10 @@
           <!-- additional source row -->
           <td>
             <!-- Marcellus Williams source div -->
-            <iframe src="MarcellusWilliams.html" height="0"></iframe>
-          </td>
-          <td>
+            <iframe id="MarcellusWilliams" src="MarcellusWilliams.html" class="frame"></iframe>
+
             <!-- congress source div -->
-            <iframe src="congress.html" height="0"></iframe>
+            <iframe id="congress" src="congress.html" class="frame"></iframe>
           </td>
         </tr>
     </tbody>
