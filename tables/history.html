@@ -1,15 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- link to stylesheet -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- link to JS -->
+   <script src="script.js"></script>
+</head>
 <table id="history" display="hidden">
     <caption> History </caption>
       <thead>
         <tr>
           <th>
-          Century (Gregorian)
+            entury (Gregorian)
           </th>
           <th>
           Sources
           </th>
           <th>
-          Additional Sources
+            Additional Sources
           </th>
         </tr>
       </thead>
@@ -44,19 +53,21 @@
           <div id="1900s"></div>
           <div id="2000s"></div>
           <div id="2010s"></div>
-          <div id="2020s">
-            <button></button>
+          <div id="2020s" display="hidden">
             <button onclick="vis('congress')">
               1789-Present - Acts of the Congress
             </button>
-          </div>
+            </div>
         </td>
-         <td>        
-            <button onclick="select('files/history/2020s/1789-Present - Acts of the Congress/1807-1809 - 10th Congress.pdf')">
-               1807-1809 - 10th Congress
-            </button>
-             <button onclick="select('files/history/2020s/1789-Present - Acts of the Congress/1840-1841 - 26th Congress.pdf')">
+        <td>
+            <div id="congress" display="hidden">  
+                <button onclick="select('files/history/2020s/1789-Present - Acts of the Congress/1807-1809 - 10th Congress.pdf')">
+                1807-1809 - 10th Congress
+                </button>
+                <button onclick="select('files/history/2020s/1789-Present - Acts of the Congress/1840-1841 - 26th Congress.pdf')">
                 1840-1841 - 26th Congress
-             </button>
-         </td>
+                </button>
+            </div>   
+        </td>
     </table>
+</html>
