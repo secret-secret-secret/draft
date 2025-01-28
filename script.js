@@ -10,10 +10,10 @@ function select(source) {
 
 // showing file tables and file columns
 function vis(column) {
-   if (document.getElementById(column).style.visibility === "collapse") {
-      document.getElementById(column).style.visibility = "visible";
+   if (document.getElementById(column).style.height === "0") {
+      document.getElementById(column).style.height = "250em";
    } else {
-      document.getElementById(column).style.visibility = "collapse";
+      document.getElementById(column).style.height = "0";
    }
 }
 // https://drive.google.com/file/d/1LDRlyZaZTF-bxHjBDEiL2obMxYHtf3YT/view?usp=sharing
